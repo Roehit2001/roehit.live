@@ -102,7 +102,7 @@ function showDebugMessage(message) {
 // Please purchase a pro license for credit removal rights
 var creditcontainer = document.querySelector(".buttons");
 var creditdiv = document.createElement('div');
-creditdiv.innerHTML = '<div class="field" style="font-size:0.9em;color:#aaa;padding-top:15px;padding-bottom:10px">Contact Form by <a href="https://www.freecontactform.com/forms/form-creator" style="font-size:0.9em;color:#aaa;text-decoration:none">FCF Form Creator</a></div>';
+creditdiv.innerHTML = '<div class="field" style="font-size:0.9em;color:#aaa;padding-top:15px;padding-bottom:10px">Contact Form by <a href="https://www.freecontactform.com/forms/form-creator" style="font-size:0.9em;color:#aaa;text-decoration:none"></a></div>';
 creditcontainer.parentNode.insertAdjacentElement('afterend', creditdiv);
 
 

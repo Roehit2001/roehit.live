@@ -281,27 +281,32 @@
         <h2>Contact</h2>
         <p>Contact Me</p>
       </div>
-
+      <form id="my-form"
+      action="https://formspree.io/f/xgepvdgj"
+      method="POST">
       <div class="row mt-2">
 
         <div class="col-md-6 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>Cirali-602, Godrej palmgrove apartment, chennai, 600123</p>
+            <!-- <h3>My Address</h3>
+            <p>Chennai, India -->
+            <label>Email:</label>
+      <input type="email" name="email" /><br>
           </div>
         </div>
 
         <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
+            <!-- <h3>Social Profiles</h3>
             <div class="social-links">
               <a href="https://twitter.com/Roehit3" class="twitter"><i class="icofont-twitter"></i></a>
               <a href="https://www.facebook.com/ROEHITR" class="facebook"><i class="icofont-facebook"></i></a>
               <a href="https://www.instagram.com/roehit_r/?hl=en" class="instagram"><i class="icofont-instagram"></i></a>
-              <a href="https://in.linkedin.com/in/roehit-ranganathan-b370371a2" class="linkedin"><i class="icofont-linkedin"></i></a>
-      
+              <a href="https://in.linkedin.com/in/roehit-ranganathan-b370371a2" class="linkedin"><i class="icofont-linkedin"></i></a> -->
+              <label>Name:</label>
+      <input type="name" name="name" /><br>
             </div>
           </div>
         </div>
@@ -309,30 +314,28 @@
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-envelope"></i>
-            <h3>Email Me</h3>
-            <p>roehitr1@gmail.com</p>
+            <!-- <h3>Email Me</h3>
+            <p>roehitr1@gmail.com</p> -->
+            <label>Message:</label>
+            <input type="text" name="message" /><br>
           </div>
         </div>
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-phone-call"></i>
-            <h3>Call Me</h3>
-            <p>91 98402 53070</p>
+            <!-- <h3>Call Me</h3>
+            <p>91 98402 53070</p> -->
+            <button id="my-form-button">Submit</button>
+            <p id="my-form-status"></p>
           </div>
         </div>
       </div>
-      <form id="my-form"
-      action="https://formspree.io/f/xgepvdgj"
-      method="POST"
+      
     >
-      <label>Email:</label>
-      <input type="email" name="email" /><br>
-      <label>Name:</label>
-      <input type="name" name="name" /><br>
-      <label>Message:</label>
-      <input type="text" name="message" /><br>
-      <button id="my-form-button">Submit</button>
-      <p id="my-form-status"></p>
+      
+      
+    
+     
     </form>
       
 

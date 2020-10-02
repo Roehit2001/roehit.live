@@ -895,7 +895,11 @@ section .container {
   color: #ffffff;
   padding: 20px;
   width: 100%;
+  height: 50px;
   background: rgba(255, 255, 255, 0.08);
+}
+.contact .info-box #msgs #but{
+  height: 100px;
 }
 
 .contact .info-box i.bx {
@@ -922,12 +926,12 @@ section .container {
   margin: 0 0 0 68px;
 }
 
-.contact .info-box .social-links {
+ .contact .info-box  {
   margin: 5px 0 0 68px;
   display: flex;
 }
 
-.contact .info-box .social-links a {
+.contact .info-box  {
   font-size: 18px;
   display: inline-block;
   color: #fff;
@@ -936,124 +940,84 @@ section .container {
   transition: 0.3s;
 }
 
-.contact .info-box .social-links a:hover {
+.contact .info-box  {
   color: #18d26e;
-} 
+}  
 
-.contact form {
-  padding: 30px;
-  background: rgba(255, 255, 255, 0.08);
+.contact .msgs input[type =text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: black;
+  border-color: #18d26e;
+  color: #18d26e;
+  height: 50px;
+  transition-duration: 0.4s;
+  
+}
+.contact .msgs input[type=text]:hover {
+  background-color: #000000;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+.contact .mail input[type =email]{
+  width: auto;
+  padding: 12px 20px;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: black;
+  border-color: #18d26e;
+  color: #18d26e;
+  height: 30px;
+  transition-duration: 0.4s;
+  
+}
+.contact .mail input[type =email]:hover{
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.contact .name input[type =name]{
+  width: auto;
+  padding: 12px 20px;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: black;
+  border-color: #18d26e;
+  color: #18d26e;
+  height: 30px;
+  transition-duration: 0.4s;
+  
+}
+.contact .name input[type=name]:hover{
+  background-color: black;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
-.contact form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact form .error-message {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact form .error-message br + br {
-  margin-top: 25px;
-}
-
-.contact form .sent-message {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact form .loading {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  text-align: center;
-  padding: 15px;
-}
-
-.contact form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact form input, .contact form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 0;
-  transition: 0.3s;
-  color: #fff;
-}
-
-.contact form input:focus, .contact form textarea:focus {
-  background-color: rgba(255, 255, 255, 0.11);
-}
-
-.contact form input::-webkit-input-placeholder, .contact form textarea::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-}
-
-.contact form input::-moz-placeholder, .contact form textarea::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-}
-
-.contact form input:-ms-input-placeholder, .contact form textarea:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-}
-
-.contact form input::-ms-input-placeholder, .contact form textarea::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-}
-
-.contact form input::placeholder, .contact form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-}
-
-.contact form input {
-  padding: 20px 15px;
-}
-
-.contact form textarea {
-  padding: 12px 15px;
-}
-
-.contact form button[type="submit"] {
+.contact #my-form-button[type="submit"] {
   background: #18d26e;
   border: 0;
   padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
   border-radius: 4px;
+  margin-top: 2px;
 }
 
-.contact form button[type="submit"]:hover {
+.contact  .button{
   background: #15bb62;
+  width: 100%;
+  border: 2px solid #ffffff; 
+  transition-duration: 0.4s;
+} 
+
+.contact .button:hover{
+  background: black;
+  color: #15bb62;
 }
+
 
 @-webkit-keyframes animate-loading {
   0% {
